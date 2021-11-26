@@ -10,6 +10,10 @@
 
 import Foundation
 
+enum MyError: Error {
+  case invalidDouble(String)
+}
+
 func boardFootCalculator(width: String, height: String) throws -> Double {
   let widthDouble: Double = Double(width)!
   let heightDouble: Double = Double(height)!
